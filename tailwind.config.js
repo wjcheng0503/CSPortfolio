@@ -1,0 +1,71 @@
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        black: colors.black,
+        white: colors.white,
+        emerald: colors.emerald,
+        indigo: colors.indigo,
+        yellow: colors.yellow,
+        stone: colors.warmGray,
+        sky: colors.lightBlue,
+        neutral: colors.trueGray,
+        gray: colors.coolGray,
+        slate: colors.blueGray,
+        orange: colors.orange,
+        orangeHappy: {
+          100: "#FEDEBE",
+          200: "#FFAF42",
+          300: "#FF8303",
+          400: "#FE6E00",
+          500: "#FD5602",
+        },
+        orangeFruit: {
+          100: "#f8d496",
+          200: "#ffa836",
+          300: "#ee8d24",
+          400: "#f5761a",
+          500: "#e26310",
+        },
+      },
+      spacing: {
+        '1/8': '12.5%',
+        '2/8': '25%',
+        '3/8': '37.5%',
+        '4/8': '50%',
+        '5/8': '62.5%',
+        '6/8': '75%',
+        '7/8': '87.5%',
+        '1/24': '4.166666666666666%',
+        '2/24': '8.333333333333332%',
+        '5/24': '20.833333333333336%',
+        '7/24': '29.166666666666668%',
+        '10/24': '41.66666666666667%',
+        '11/24': '45.83333333333333%',
+        '13/24': '54.166666666666664%',
+        '14/24': '58.333333333333336%',
+        '17/24': '70.83333333333334%',
+        '19/24': '79.16666666666666%',
+        '22/24': '91.66666666666666%',
+        '23/24': '95.83333333333334%',
+        '128': '32rem',
+        '160': '40rem',
+      },
+      transitionProperty: {
+        'height': 'height',
+        'width': 'width',
+        'spacing': 'margin, padding',
+      },
+  },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
