@@ -51,11 +51,12 @@ export default function Projects() {
                 <div className="h-full flex flex-col justify-evenly">
                     <SingleProject  title={"Endless Runner Android Game"} 
                                     projectType={"Unity Mobile Game"} 
-                                    skills={["Figma", "Unity", "C#", "Git", "Version Controls", "Firebase"]}
+                                    skills={["Figma", "Unity", "C#", "Git", "Version Controls", "Firebase", "Android", "iOS"]}
                                     descriptions={[ "Collaborated with a teammate to build a platformer game where players run endlessly while dodging incoming obstacles.",
                                                     "Followed a proper software development cycle, from storyboarding, use-case planning to the implementaion and testing of the final game.",
                                                     "Leveraged the Unity engine to compute the states and logic for the game, from player movements to procedural-generation of traps and walls.",
-                                                    "Stored player data in the cloud via Firebase, allowing for major game features such as user login, leaderboards, and even in-game stores."]}/>
+                                                    "Deployed the game on Android and iOS to create a multi-platform player base.",
+                                                    "Stored player data in the cloud via Firebase, allowing for major game features such as user login, leaderboards, and in-game purchases."]}/>
                 </div>
             </div>
         </section>
