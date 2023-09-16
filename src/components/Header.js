@@ -85,7 +85,7 @@ export default function Header() {
                                 src={require('../img/github-icon.png')}
                         />
                     </a>
-                    <a  href="wenraycheng@gmail.com">
+                    <a  href="mailto:wenraycheng@gmail.com">
                         <img    className="h-16"
                                 alt="email"
                                 src={require('../img/mail-icon.png')}
