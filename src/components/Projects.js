@@ -8,11 +8,11 @@ function SingleProject({title, projectType, skills, descriptions}) {
                                     bg-orange-100
                                     rounded-lg border-solid border-4 border-orange-700
                                     relative">
-                        <h1 className=" inline
+                        <h1 className=" whitespace-nowrap
                                         font-bold sm:text-2xl text-1.5xl font-lg
                                         text-gray-100
                                         p-2 px-4 bg-orange-700 rounded
-                                        absolute bottom-22/24 right-4/6">
+                                        absolute bottom-22/24 -left-0.25">
                             {title}
                         </h1>
                         <h2 className="italic">{projectType}</h2>
@@ -47,8 +47,7 @@ export default function Projects() {
                                                     "Utilized a database to store user data (such as wins and total attempts), as well as Pokemon information from which hints are given.",
                                                     "Employed ReactJS for frontend, and ASP.NET for the backend, establishing a cohesive MVC architecture.",
                                                     "Conducted extensive unit- and integration-testing via the Jest framework to ensure the functionality and stability of the game."]}/>
-                </div>
-                <div className="h-full flex flex-col justify-evenly">
+                    
                     <SingleProject  title={"Endless Runner Android Game"} 
                                     projectType={"Unity Mobile Game"} 
                                     skills={["Figma", "Unity", "C#", "Git", "Version Controls", "Firebase", "Android", "iOS"]}
@@ -57,6 +56,19 @@ export default function Projects() {
                                                     "Leveraged the Unity engine to compute the states and logic for the game, from player movements to procedural-generation of traps and walls.",
                                                     "Deployed the game on Android and iOS to create a multi-platform player base.",
                                                     "Stored player data in the cloud via Firebase, allowing for major game features such as user login, leaderboards, and in-game purchases."]}/>
+
+                    <SingleProject  title={"Smart Baby Monitor"} 
+                                    projectType={"IoT-Based Device"} 
+                                    skills={["Python", "Cloud Storage", "AWS", "Internet of Things", "AWS Lambda", "AWS SNS"]}
+                                    descriptions={[ "Developed a smart monitor that watches movements of babies during their sleep and warns parents of any abnormal or dangerous activities.",
+                                                    "Established the monitor's cloud-based backend through AWS Cloud technologies such as IoT, Lambda and SNS."]}/>
+
+                    <SingleProject  title={"Web-Forum for Fan-Created Pokemon"} 
+                                    projectType={"Web Application"} 
+                                    skills={["Python", "HTML5", "Django"]}
+                                    descriptions={[ "Designed a web forum for users to create and share their original designs for Pokemon from the titular series",
+                                                    "Hosted a database through Django and Python, enabling persistent information on the website, such as registered users, " +
+                                                    "Pokemon creations, battle simulations, and type effectiveness."]}/>
                 </div>
             </div>
         </section>
