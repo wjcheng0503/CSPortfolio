@@ -24,11 +24,11 @@ export default function Header() {
                                 bg-orangeHappy-100 rounded-lg">
                     <div  className="mt-5 lg:w-5/6 md:w-1/2 w-4/6
                                      lg:h-5/6 md:h-1/2 h-4/6
-                                    rounded-lg border-solid border-4 border-orange-900">
+                                     rounded-lg border-solid border-4 border-orange-900">
                         <img className="object-cover object-center
                                         rounded"
                             alt="myself"
-                            src={require('../img/raine-photo.png')}
+                            src={require('../img/self-photo.png')}
                         />
                     </div>
                     
