@@ -29,6 +29,7 @@ export default function Header() {
                                         rounded"
                             alt="myself"
                             src={require('../img/self-photo.png')}
+                            
                         />
                     </div>
                     
